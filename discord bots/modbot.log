@@ -1,0 +1,864 @@
+2026-07-21 04:05:46 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-07-21 04:05:46 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-07-21 04:05:47 [INFO] modbot: Arrêt du bot...
+2026-07-21 04:05:47 [CRITICAL] modbot: Erreur fatale : Improper token has been passed.
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\http.py", line 844, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\http.py", line 778, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 257, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\lorda\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\lorda\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lorda\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\Games\Bots search\discord bots\bot.py", line 252, in main
+    await bot.start(TOKEN)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\client.py", line 850, in start
+    await self.login(token)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\client.py", line 679, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\http.py", line 848, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+2026-07-21 04:12:23 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-07-21 04:12:23 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-07-21 04:12:23 [INFO] modbot: Arrêt du bot...
+2026-07-21 04:12:23 [CRITICAL] modbot: Erreur fatale : Improper token has been passed.
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\http.py", line 844, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\http.py", line 778, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 257, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\lorda\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\lorda\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lorda\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\Games\Bots search\discord bots\bot.py", line 252, in main
+    await bot.start(TOKEN)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\client.py", line 850, in start
+    await self.login(token)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\client.py", line 679, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\http.py", line 848, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+2026-07-21 04:14:58 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-07-21 04:14:59 [INFO] database.db_manager: Base de données connectée : modbot.db
+2026-07-21 04:14:59 [INFO] modbot: Base de données initialisée.
+2026-07-21 04:14:59 [INFO] modbot: ✅ Cog chargé : cogs.moderation
+2026-07-21 04:14:59 [INFO] modbot: ✅ Cog chargé : cogs.automod
+2026-07-21 04:14:59 [INFO] modbot: ✅ Cog chargé : cogs.logs
+2026-07-21 04:14:59 [ERROR] modbot: ❌ Erreur chargement cog cogs.tickets : Extension 'cogs.tickets' raised an error: SyntaxError: unexpected character after line continuation character (tickets.py, line 257)
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 962, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Games\Bots search\discord bots\cogs\tickets.py", line 257
+    f"**Propriétaire :** {owner.mention if owner else f'ID:{ticket[\"owner_id\"]}'}\n"
+                                                                    ^
+SyntaxError: unexpected character after line continuation character
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 94, in setup_hook
+    await self.load_extension(cog)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1040, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 965, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.tickets' raised an error: SyntaxError: unexpected character after line continuation character (tickets.py, line 257)
+2026-07-21 04:14:59 [ERROR] modbot: ❌ Erreur chargement cog cogs.roles : Extension 'cogs.roles' raised an error: SyntaxError: unexpected character after line continuation character (roles.py, line 240)
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 962, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Games\Bots search\discord bots\cogs\roles.py", line 240
+    lines.append(f"{rr['emoji']} → {role.mention if role else f'ID:{rr[\"role_id\"]}'} ({rr['role_type']})")
+                                                                        ^
+SyntaxError: unexpected character after line continuation character
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 94, in setup_hook
+    await self.load_extension(cog)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1040, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 965, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.roles' raised an error: SyntaxError: unexpected character after line continuation character (roles.py, line 240)
+2026-07-21 04:14:59 [INFO] modbot: ✅ Cog chargé : cogs.stats
+2026-07-21 04:14:59 [INFO] modbot: ✅ Cog chargé : cogs.config_cog
+2026-07-21 04:14:59 [WARNING] modbot: Cogs en échec : cogs.tickets, cogs.roles
+2026-07-21 04:14:59 [INFO] modbot: Commandes slash synchronisées (global) : 22
+2026-07-21 04:15:02 [INFO] modbot: ============================================================
+2026-07-21 04:15:02 [INFO] modbot: 🤖 Bot connecté : BlackSentinel#0378 (ID: 1528940809137950823)
+2026-07-21 04:15:02 [INFO] modbot: 📊 Serveurs     : 1
+2026-07-21 04:15:02 [INFO] modbot: 👥 Membres      : 27
+2026-07-21 04:15:02 [INFO] modbot: ============================================================
+2026-07-21 13:37:05 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-07-21 13:37:05 [INFO] database.db_manager: Base de données connectée : modbot.db
+2026-07-21 13:37:05 [INFO] modbot: Base de données initialisée.
+2026-07-21 13:37:05 [INFO] modbot: ✅ Cog chargé : cogs.moderation
+2026-07-21 13:37:05 [INFO] modbot: ✅ Cog chargé : cogs.automod
+2026-07-21 13:37:05 [INFO] modbot: ✅ Cog chargé : cogs.logs
+2026-07-21 13:37:05 [ERROR] modbot: ❌ Erreur chargement cog cogs.tickets : Extension 'cogs.tickets' raised an error: SyntaxError: unexpected character after line continuation character (tickets.py, line 257)
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 962, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Games\Bots search\discord bots\cogs\tickets.py", line 257
+    f"**Propriétaire :** {owner.mention if owner else f'ID:{ticket[\"owner_id\"]}'}\n"
+                                                                    ^
+SyntaxError: unexpected character after line continuation character
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 94, in setup_hook
+    await self.load_extension(cog)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1040, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 965, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.tickets' raised an error: SyntaxError: unexpected character after line continuation character (tickets.py, line 257)
+2026-07-21 13:37:05 [ERROR] modbot: ❌ Erreur chargement cog cogs.roles : Extension 'cogs.roles' raised an error: SyntaxError: unexpected character after line continuation character (roles.py, line 240)
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 962, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Games\Bots search\discord bots\cogs\roles.py", line 240
+    lines.append(f"{rr['emoji']} → {role.mention if role else f'ID:{rr[\"role_id\"]}'} ({rr['role_type']})")
+                                                                        ^
+SyntaxError: unexpected character after line continuation character
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 94, in setup_hook
+    await self.load_extension(cog)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1040, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 965, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.roles' raised an error: SyntaxError: unexpected character after line continuation character (roles.py, line 240)
+2026-07-21 13:37:05 [INFO] modbot: ✅ Cog chargé : cogs.stats
+2026-07-21 13:37:05 [INFO] modbot: ✅ Cog chargé : cogs.config_cog
+2026-07-21 13:37:05 [WARNING] modbot: Cogs en échec : cogs.tickets, cogs.roles
+2026-07-21 13:37:05 [INFO] modbot: Commandes slash synchronisées (global) : 22
+2026-07-21 13:37:08 [INFO] modbot: ============================================================
+2026-07-21 13:37:08 [INFO] modbot: 🤖 Bot connecté : BlackSentinel#0378 (ID: 1528940809137950823)
+2026-07-21 13:37:08 [INFO] modbot: 📊 Serveurs     : 1
+2026-07-21 13:37:08 [INFO] modbot: 👥 Membres      : 27
+2026-07-21 13:37:08 [INFO] modbot: ============================================================
+2026-07-21 13:37:21 [ERROR] discord.app_commands.tree: Ignoring exception in command 'modrole-add'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 881, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'modrole-add' failed.
+2026-07-21 13:40:02 [ERROR] discord.app_commands.tree: Ignoring exception in command 'modrole-list'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 881, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'modrole-list' failed.
+2026-07-21 13:40:37 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-07-21 13:40:37 [INFO] database.db_manager: Base de données connectée : modbot.db
+2026-07-21 13:40:37 [INFO] modbot: Base de données initialisée.
+2026-07-21 13:40:37 [INFO] modbot: ✅ Cog chargé : cogs.moderation
+2026-07-21 13:40:38 [INFO] modbot: ✅ Cog chargé : cogs.automod
+2026-07-21 13:40:38 [INFO] modbot: ✅ Cog chargé : cogs.logs
+2026-07-21 13:40:38 [ERROR] modbot: ❌ Erreur chargement cog cogs.tickets : Extension 'cogs.tickets' raised an error: SyntaxError: unexpected character after line continuation character (tickets.py, line 257)
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 962, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Games\Bots search\discord bots\cogs\tickets.py", line 257
+    f"**Propriétaire :** {owner.mention if owner else f'ID:{ticket[\"owner_id\"]}'}\n"
+                                                                    ^
+SyntaxError: unexpected character after line continuation character
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 94, in setup_hook
+    await self.load_extension(cog)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1040, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 965, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.tickets' raised an error: SyntaxError: unexpected character after line continuation character (tickets.py, line 257)
+2026-07-21 13:40:38 [ERROR] modbot: ❌ Erreur chargement cog cogs.roles : Extension 'cogs.roles' raised an error: SyntaxError: unexpected character after line continuation character (roles.py, line 240)
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 962, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Games\Bots search\discord bots\cogs\roles.py", line 240
+    lines.append(f"{rr['emoji']} → {role.mention if role else f'ID:{rr[\"role_id\"]}'} ({rr['role_type']})")
+                                                                        ^
+SyntaxError: unexpected character after line continuation character
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 94, in setup_hook
+    await self.load_extension(cog)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1040, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 965, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.roles' raised an error: SyntaxError: unexpected character after line continuation character (roles.py, line 240)
+2026-07-21 13:40:38 [INFO] modbot: ✅ Cog chargé : cogs.stats
+2026-07-21 13:40:38 [INFO] modbot: ✅ Cog chargé : cogs.config_cog
+2026-07-21 13:40:38 [WARNING] modbot: Cogs en échec : cogs.tickets, cogs.roles
+2026-07-21 13:40:38 [INFO] modbot: Commandes slash synchronisées (global) : 22
+2026-07-21 13:40:40 [INFO] modbot: ============================================================
+2026-07-21 13:40:40 [INFO] modbot: 🤖 Bot connecté : BlackSentinel#0378 (ID: 1528940809137950823)
+2026-07-21 13:40:40 [INFO] modbot: 📊 Serveurs     : 1
+2026-07-21 13:40:40 [INFO] modbot: 👥 Membres      : 27
+2026-07-21 13:40:40 [INFO] modbot: ============================================================
+2026-07-21 13:41:49 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py:1136> exception=NotFound('404 Not Found (error code: 10062): Unknown interaction')>
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    if not await self._check_can_run(interaction):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 1018, in _check_can_run
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\utils.py", line 725, in async_all
+    elem = await elem
+           ^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\utils\checks.py", line 54, in predicate
+    await interaction.response.send_message(
+    ...<3 lines>...
+    )
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 13:41:49 [ERROR] discord.app_commands.tree: Ignoring exception in command 'modrole-add'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 881, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'modrole-add' failed.
+2026-07-21 13:52:37 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py:1136> exception=NotFound('404 Not Found (error code: 10062): Unknown interaction')>
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    if not await self._check_can_run(interaction):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 1018, in _check_can_run
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\utils.py", line 725, in async_all
+    elem = await elem
+           ^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\utils\checks.py", line 54, in predicate
+    await interaction.response.send_message(
+    ...<3 lines>...
+    )
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 13:52:37 [ERROR] discord.app_commands.tree: Ignoring exception in command 'modrole-add'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 881, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'modrole-add' failed.
+2026-07-21 13:56:10 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-07-21 13:56:10 [INFO] database.db_manager: Base de données connectée : modbot.db
+2026-07-21 13:56:10 [INFO] modbot: Base de données initialisée.
+2026-07-21 13:56:10 [INFO] modbot: ✅ Cog chargé : cogs.moderation
+2026-07-21 13:56:10 [INFO] modbot: ✅ Cog chargé : cogs.automod
+2026-07-21 13:56:10 [INFO] modbot: ✅ Cog chargé : cogs.logs
+2026-07-21 13:56:10 [ERROR] modbot: ❌ Erreur chargement cog cogs.tickets : Extension 'cogs.tickets' raised an error: SyntaxError: unexpected character after line continuation character (tickets.py, line 257)
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 962, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Games\Bots search\discord bots\cogs\tickets.py", line 257
+    f"**Propriétaire :** {owner.mention if owner else f'ID:{ticket[\"owner_id\"]}'}\n"
+                                                                    ^
+SyntaxError: unexpected character after line continuation character
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 100, in setup_hook
+    await self.load_extension(cog)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1040, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 965, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.tickets' raised an error: SyntaxError: unexpected character after line continuation character (tickets.py, line 257)
+2026-07-21 13:56:10 [ERROR] modbot: ❌ Erreur chargement cog cogs.roles : Extension 'cogs.roles' raised an error: SyntaxError: unexpected character after line continuation character (roles.py, line 240)
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 962, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 893, in get_code
+  File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "D:\Games\Bots search\discord bots\cogs\roles.py", line 240
+    lines.append(f"{rr['emoji']} → {role.mention if role else f'ID:{rr[\"role_id\"]}'} ({rr['role_type']})")
+                                                                        ^
+SyntaxError: unexpected character after line continuation character
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\bot.py", line 100, in setup_hook
+    await self.load_extension(cog)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 1040, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\ext\commands\bot.py", line 965, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.roles' raised an error: SyntaxError: unexpected character after line continuation character (roles.py, line 240)
+2026-07-21 13:56:10 [INFO] modbot: ✅ Cog chargé : cogs.stats
+2026-07-21 13:56:10 [INFO] modbot: ✅ Cog chargé : cogs.config_cog
+2026-07-21 13:56:10 [WARNING] modbot: Cogs en échec : cogs.tickets, cogs.roles
+2026-07-21 13:56:11 [INFO] modbot: Commandes slash synchronisées (global) : 22
+2026-07-21 13:56:13 [INFO] modbot: ============================================================
+2026-07-21 13:56:13 [INFO] modbot: 🤖 Bot connecté : BlackSentinel#0378 (ID: 1528940809137950823)
+2026-07-21 13:56:13 [INFO] modbot: 📊 Serveurs     : 1
+2026-07-21 13:56:13 [INFO] modbot: 👥 Membres      : 27
+2026-07-21 13:56:13 [INFO] modbot: ============================================================
+2026-07-21 13:56:32 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-07-21 13:56:32 [INFO] database.db_manager: Base de données connectée : modbot.db
+2026-07-21 13:56:32 [INFO] modbot: Base de données initialisée.
+2026-07-21 13:56:32 [INFO] modbot: ✅ Cog chargé : cogs.moderation
+2026-07-21 13:56:32 [INFO] modbot: ✅ Cog chargé : cogs.automod
+2026-07-21 13:56:32 [INFO] modbot: ✅ Cog chargé : cogs.logs
+2026-07-21 13:56:32 [INFO] modbot: ✅ Cog chargé : cogs.tickets
+2026-07-21 13:56:32 [INFO] modbot: ✅ Cog chargé : cogs.roles
+2026-07-21 13:56:32 [INFO] modbot: ✅ Cog chargé : cogs.stats
+2026-07-21 13:56:32 [INFO] modbot: ✅ Cog chargé : cogs.config_cog
+2026-07-21 13:57:11 [INFO] modbot: Commandes slash synchronisées (global) : 27
+2026-07-21 13:57:13 [INFO] modbot: ============================================================
+2026-07-21 13:57:13 [INFO] modbot: 🤖 Bot connecté : BlackSentinel#0378 (ID: 1528940809137950823)
+2026-07-21 13:57:13 [INFO] modbot: 📊 Serveurs     : 1
+2026-07-21 13:57:13 [INFO] modbot: 👥 Membres      : 27
+2026-07-21 13:57:13 [INFO] modbot: ============================================================
+2026-07-21 13:58:05 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py:1136> exception=NotFound('404 Not Found (error code: 10062): Unknown interaction')>
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    if not await self._check_can_run(interaction):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 1018, in _check_can_run
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\utils.py", line 725, in async_all
+    elem = await elem
+           ^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\utils\checks.py", line 54, in predicate
+    async def predicate(interaction: discord.Interaction) -> bool:
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+            await interaction.response.send_message(
+            ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 13:58:33 [ERROR] discord.app_commands.tree: Ignoring exception in command 'modrole-add'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\config_cog.py", line 73, in config_modrole_add
+    await interaction.response.send_message(
+    ...<2 lines>...
+    )
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'modrole-add' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 14:01:48 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py:1136> exception=HTTPException('400 Bad Request (error code: 40060): Interaction has already been acknowledged.')>
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\moderation.py", line 494, in purge
+    await interaction.response.defer(ephemeral=True)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'purge' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1305, in _call
+    await command._invoke_error_handlers(interaction, e)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 814, in _invoke_error_handlers
+    await binding_error_handler(interaction, error)
+  File "D:\Games\Bots search\discord bots\cogs\moderation.py", line 634, in cog_app_command_error
+    await send(embed=embed, ephemeral=True)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+2026-07-21 14:02:13 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py:1136> exception=HTTPException('400 Bad Request (error code: 40060): Interaction has already been acknowledged.')>
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\moderation.py", line 494, in purge
+    await interaction.response.defer(ephemeral=True)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'purge' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1305, in _call
+    await command._invoke_error_handlers(interaction, e)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 814, in _invoke_error_handlers
+    await binding_error_handler(interaction, error)
+  File "D:\Games\Bots search\discord bots\cogs\moderation.py", line 634, in cog_app_command_error
+    await send(embed=embed, ephemeral=True)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+2026-07-21 18:38:21 [ERROR] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1270, in _call
+    command, options = self._get_app_command_options(data)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1202, in _get_app_command_options
+    raise CommandSignatureMismatch(command)
+discord.app_commands.errors.CommandSignatureMismatch: The signature for command 'automod' is different from the one provided by Discord. This can happen because either your code is out of date or you have not synced the commands with Discord, causing the mismatch in data. It is recommended to sync the command tree to fix this issue.
+2026-07-21 18:38:21 [ERROR] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1270, in _call
+    command, options = self._get_app_command_options(data)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1202, in _get_app_command_options
+    raise CommandSignatureMismatch(command)
+discord.app_commands.errors.CommandSignatureMismatch: The signature for command 'automod' is different from the one provided by Discord. This can happen because either your code is out of date or you have not synced the commands with Discord, causing the mismatch in data. It is recommended to sync the command tree to fix this issue.
+2026-07-21 18:39:30 [WARNING] discord.http: We are being rate limited. POST https://discord.com/api/v10/channels/1528949103277637754/messages responded with 429. Retrying in 0.83 seconds.
+2026-07-21 18:39:42 [WARNING] discord.http: We are being rate limited. POST https://discord.com/api/v10/channels/1528949103277637754/messages responded with 429. Retrying in 0.72 seconds.
+2026-07-21 18:39:48 [WARNING] discord.http: We are being rate limited. POST https://discord.com/api/v10/channels/1528949103277637754/messages responded with 429. Retrying in 0.65 seconds.
+2026-07-21 18:39:55 [WARNING] discord.http: We are being rate limited. POST https://discord.com/api/v10/channels/1528949103277637754/messages responded with 429. Retrying in 0.82 seconds.
+2026-07-21 18:40:01 [WARNING] discord.http: We are being rate limited. POST https://discord.com/api/v10/channels/1528949103277637754/messages responded with 429. Retrying in 0.75 seconds.
+2026-07-21 18:40:15 [ERROR] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1270, in _call
+    command, options = self._get_app_command_options(data)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1174, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command 'autorole' not found
+2026-07-21 18:40:47 [ERROR] discord.app_commands.tree: Ignoring exception in command 'leaderboard'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\stats.py", line 153, in leaderboard
+    await interaction.response.defer()
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'leaderboard' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 18:41:02 [ERROR] discord.app_commands.tree: Ignoring exception in command 'leaderboard'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\stats.py", line 153, in leaderboard
+    await interaction.response.defer()
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'leaderboard' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 18:41:21 [ERROR] discord.app_commands.tree: Ignoring exception in command 'leaderboard'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\stats.py", line 153, in leaderboard
+    await interaction.response.defer()
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'leaderboard' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 18:41:50 [ERROR] discord.app_commands.tree: Ignoring exception in command 'userinfo'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\stats.py", line 282, in userinfo
+    await interaction.response.send_message(embed=embed)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'userinfo' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 18:42:19 [ERROR] discord.app_commands.tree: Ignoring exception in command 'userinfo'
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\stats.py", line 282, in userinfo
+    await interaction.response.send_message(embed=embed)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'userinfo' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-07-21 18:48:10 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py:1136> exception=HTTPException('400 Bad Request (error code: 40060): Interaction has already been acknowledged.')>
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\moderation.py", line 494, in purge
+    await interaction.response.defer(ephemeral=True)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'purge' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1305, in _call
+    await command._invoke_error_handlers(interaction, e)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 814, in _invoke_error_handlers
+    await binding_error_handler(interaction, error)
+  File "D:\Games\Bots search\discord bots\cogs\moderation.py", line 634, in cog_app_command_error
+    await send(embed=embed, ephemeral=True)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+2026-07-21 18:52:27 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py:1136> exception=HTTPException('400 Bad Request (error code: 40060): Interaction has already been acknowledged.')>
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\cogs\moderation.py", line 616, in note
+    await interaction.response.send_message(embed=embed, ephemeral=True)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'note' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\tree.py", line 1305, in _call
+    await command._invoke_error_handlers(interaction, e)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\app_commands\commands.py", line 814, in _invoke_error_handlers
+    await binding_error_handler(interaction, error)
+  File "D:\Games\Bots search\discord bots\cogs\moderation.py", line 634, in cog_app_command_error
+    await send(embed=embed, ephemeral=True)
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Games\Bots search\discord bots\.venv\Lib\site-packages\discord\webhook\async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
