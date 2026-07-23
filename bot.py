@@ -262,11 +262,12 @@ async def main() -> None:
         embed.add_field(name="🔧 Cogs actifs", value=cogs_list or "*Aucun*", inline=False)
         await ctx.reply(embed=embed)
 
-    # Vérification du token
+        # Vérification du token
     if not TOKEN or TOKEN == "your_token_here":
-        log.error("❌ ERREUR : BOT_TOKEN non défini dans le fichier .env !")
-        log.error("   Éditez le fichier .env et ajoutez votre token Discord.")
+        log.error("❌ ERREUR : BOT_TOKEN non défini !")
         sys.exit(1)
+
+    print("TOKEN reçu :", TOKEN[:10], "...")
 
     async with bot:
         await bot.start(TOKEN)
